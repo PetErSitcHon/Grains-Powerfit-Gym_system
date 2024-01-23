@@ -1,0 +1,305 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand span {
+    padding-left: 30px;
+    font-weight: 600;}
+
+.navbar-nav li {
+    padding: 0 10px;}
+
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+    font-size: larger;}
+
+#nav-logo{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+/* Home Background Image Section */
+.hero{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+/* .video::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    z-index: -1;
+  }
+   */
+
+.video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -2;
+      }
+/* .video{
+    position: absolute; 
+    z-index: -1;
+} */
+
+/* @media (max-aspect-ratio: 16/9) {
+    .video {
+            width: 100%;
+            height: auto;
+    }    
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+            width: auto;
+            height: 100%;
+    }
+} */
+
+.bg-image {
+    background-image: url('/assets/images/bg-image.jpg');
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.bg-image::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+}
+#logobox{
+    width: 700px;
+    height: 300px;
+}
+.content h1 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.content button{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(167, 11, 11);
+    border: none;
+    
+}
+
+.dashboard {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.dashboard h1{
+font-size: 30px;
+align-items: center;
+}
+
+/* Typewriter design */
+.typewriterd{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(40, end);
+    animation-fill-mode: forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+
+
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  
+/* Guest css */
+
+#formpos{
+   position: relative;
+  
+}
+
+/* Banner section */
+#banner{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    background-color: bisque;
+}
+section{
+    margin-top: 0;
+}
+#banner {
+    height: 100%;
+    width: 100%;
+}
+
+.logo-name h1 {
+    font-size: 4em;
+    opacity: 1;
+}
+/* 
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+#intro {
+margin-top: -58.59px;
+}
+}
+
+.dnav{
+    color: #fff !important;
+    font-weight: 600;
+    font-size: larger;
+}
+
+
+.navbar .nav-link {
+color: #fff ;
+} 
+
+/* pills sign-in sign-up */
+
+.png-logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* carousel image height */
+
+
+.form-color {
+    color: black;
+}
+
+
+/* PAYMENT SECTION */
+/* 
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: #223C60;
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #0C4160;
+    border: 2px solid #2d4dda;
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}    */
